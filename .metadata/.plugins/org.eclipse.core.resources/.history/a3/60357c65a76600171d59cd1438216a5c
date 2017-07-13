@@ -1,0 +1,23 @@
+package excise;
+
+public class FindGreatestSumOfSubArray {
+	public int FindGreatestSumOfSubArray(int[] array) {
+		int sum,max,start,end,left;
+		sum=max=start=left=end=array[0];
+		for(int i=1;i<array.length;i++){
+			if(sum<=0){
+				sum=array[i];
+				left=array[i];
+			}
+			else{
+				sum=sum+array[i];
+			}
+			if(sum>max){
+				max=sum;
+				start=left;
+				end=array[i];
+			}
+		}
+		return 0;
+	}
+}

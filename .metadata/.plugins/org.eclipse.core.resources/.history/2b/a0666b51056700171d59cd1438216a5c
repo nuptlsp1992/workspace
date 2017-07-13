@@ -1,0 +1,11 @@
+package excise;
+
+public class InversePairs {
+	int count;
+    public int InversePairs(int [] array) {
+    	count=0;
+    	
+    	return 0;
+    }
+ 
+}

@@ -1,0 +1,24 @@
+package excise;
+
+import java.util.HashMap;
+
+public class MoreThanHalfNum_Solution {
+    public int MoreThanHalfNum_Solution(int [] array) {
+    	HashMap<Integer,Integer> map=new HashMap<Integer,Integer>();
+    	for(int i=0;i<array.length;i++){
+    		if(!map.containsKey(array[i])){
+    			map.put(array[i], 1);
+    		}
+    		else{
+    			int time=map.get(array[i]);
+    			map.put(array[i], ++time);
+    		}
+    	}
+    	for(int i=0;i<array.length;i++){
+    		if(map.get(array[i]) > array.length/2){
+    			System.out.println(array[i]);
+    		}
+    	}
+        return 0;
+    }
+}

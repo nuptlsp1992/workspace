@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495353987518_1" label="fc-jupiter-parent" name="fc-jupiter-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fc-jupiter-ajax" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fc-jupiter-parent" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495115922702_0" label="Window Working Set" name="Aggregate for window 1495115922702"/>
+</workingSetManager>

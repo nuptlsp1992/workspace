@@ -1,0 +1,14 @@
+package excise;
+
+public class LinkList {
+	public LinkNode head;
+	public LinkList(){
+		this.head=null;
+	}
+	public void addFirstNode(int data){
+		LinkNode node=new LinkNode(data);
+		node.next=head;
+		head=node;
+		
+	}
+}

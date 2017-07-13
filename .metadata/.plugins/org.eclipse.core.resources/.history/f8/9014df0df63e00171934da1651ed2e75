@@ -1,0 +1,28 @@
+package com.imooc.mvcdemo.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+
+import com.imooc.mvcdemo.model.Course;
+import com.imooc.mvcdemo.service.CourseService;
+
+public class CourseController {
+	private static Logger logger=LoggerFactory.getLogger(CourseController.class);
+	private CourseService courseService;
+
+	public CourseService getCourseService() {
+		return courseService;
+	}
+	@Autowired
+	public void setCourseService(CourseService courseService) {
+		this.courseService = courseService;
+	}
+	
+	public String viewCourse(Integer courseId,Model model){
+		Course course=courseService.getCoursebyId(courseId);
+		model.addAttribute(course);//获得课程对象
+		return "";
+	}
+}

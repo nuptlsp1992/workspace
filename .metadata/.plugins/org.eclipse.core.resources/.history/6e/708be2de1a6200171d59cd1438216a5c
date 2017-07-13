@@ -1,0 +1,30 @@
+package excise;
+
+public class LinkList {
+	public static LinkNode head;
+	private int counts=0;
+	public LinkList(){
+		this.head=null;
+	}
+//	public void addFirstNode(int data){
+//		LinkNode node=new LinkNode(data);
+//		node.next=head;
+//		head=node;	
+//	}
+	public void insert(int data){
+		if(head==null){
+			head=new LinkNode();
+		}
+	}
+//	public void print(){
+//		LinkNode n=head.next;
+//		while(n !=null){
+//			System.out.println(n.data+" ");
+//		}
+//	}
+	public static void main(String[] args){
+		LinkList linkList=new LinkList();
+//		linkList.addFirstNode(20);
+//		System.out.println(head.data);
+	}
+}

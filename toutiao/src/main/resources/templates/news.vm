@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+Hello vm!
+
+##我是注释
+
+#*
+我是块注释
+*#
+
+$!{value1}
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+package excise;
+
+public class quick_sort {
+	public static void quickSort(int[] a,int start,int end){
+		int i=start,j=end,x=a[i];
+		if(i<j){
+			while(i<j){
+				while(i<j && a[j]>=x){
+					j--;
+				}
+				if(i<j){
+					a[i]=a[j];
+					i++;
+				}
+				while(i<j && a[i]<x){
+					i++;
+				}
+				if(i<j){
+					a[j]=a[i];
+					j--;
+				}
+			}
+			a[i]=x;
+			quickSort(a,start,i-1);
+			quickSort(a,i+1,end);
+		}
+	}
+	public static void main(String[] args){
+		int a[]={72,6,57,88,60,42,83,73,48,85};
+		quickSort(a,0,9);
+		for(int k=0;k<a.length;k++){
+			if(k==a.length-1){
+				System.out.print(a[k]);
+			}
+			System.out.print(a[k]+" ");
+		}
+	}
+}
