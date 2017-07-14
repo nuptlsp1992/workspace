@@ -8,7 +8,9 @@ public class MergeSort {
 		int mid=(start+end) >> 1;
 		if(start<end){
 			sort(array,start,mid);
+			//System.out.println(Arrays.toString(sort(array,start,mid)));
 			sort(array,mid+1,end);
+			//System.out.println(Arrays.toString(sort(array,mid+1,end)));
 			merge(array,start,mid,end);
 		}
 		return array;
